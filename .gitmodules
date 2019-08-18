@@ -1,6 +1,0 @@
-[submodule "L-book-client"]
-	path = E-book-client
-	url = git://github.com/famine-life/L-book-client.git
-[submodule "L-book-server"]
-	path = L-book-server
-	url = git://github.com/famine-life/L-book-server.git
