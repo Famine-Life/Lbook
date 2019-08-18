@@ -1,24 +1,25 @@
 ### 技术栈：
 ### 后端
-1. Maven 2. SpringBoot 3. SpringActuator 4. SpringSecurity 5. MyBatis 6. Jackson
-
-
-
+1. Maven 
+2. SpringBoot 
+3. SpringActuator 
+4. SpringSecurity 
+5. MyBatis 
+6. Jackson
 
 
 
 ### 前端
-1. 查看2. ElementUI的3.自举4. Axios公司5. vuex 6. VUE-CLI
-
-
-
-
-
+1. Vue
+2. ElementUI
+3. BootStrap
+4. Axios
+5. vuex 
+6. vue-cli
 
 ## 数据库
-- MySQL  -  mongoDB
-
-
+- MySQL 
+- mongoDB
 
 
 ## 功能
