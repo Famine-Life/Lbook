@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.liantao.lbook.mapper.BookMapper">
+
+    <resultMap id="BookResultMap" type="cn.liantao.lbook.entity.Book">
+        <result column="name" jdbcType="VARCHAR" property="name" />
+        <result column="author" jdbcType="VARCHAR" property="author" />
+        <result column="ISBN" jdbcType="VARCHAR" property="ISBN" />
+        <result column="outline" jdbcType="VARCHAR" property="outline" />
+        <result column="stock" jdbcType="INTEGER" property="stock" />
+        <result column="price" jdbcType="FLOAT" property="price" />
+        <result column="cover" jdbcType="VARCHAR" property="cover" />
+        <result column="press" jdbcType="VARCHAR" property="press" />
+        <result column="year" jdbcType="VARCHAR" property="year" />
+        <result column="pages" jdbcType="INTEGER" property="pages" />
+    </resultMap>
+
+    <!--获取书籍-->
+    <select id="getBook" resultType="cn.liantao.lbook.entity.Book">
+        SELECT *
+            FROM books
+                WHERE isbn = #{ISBN}
+    </select>
+
+    <select id="getBooks" resultMap="BookResultMap">
+        SELECT name,author,isbn,outline,stock,price,cover
+            FROM books
+    </select>
+
+    <select id="searchBooks" resultMap="BookResultMap">
+        SELECT *
+            FROM books
+                WHERE name like #{filter} or author like #{filter}
+    </select>
+
+    <delete id="deleteBook">
+        DELETE FROM books
+            WHERE isbn = #{ISBN}
+    </delete>
+
+    <insert id="addBook" parameterType="cn.liantao.lbook.entity.Book">
+        INSERT INTO books(name, author, isbn, outline, stock, price, cover, press, year, pages)
+            VALUES(#{name}, #{author}, #{ISBN}, #{outline}, #{stock}, #{price}, #{cover}, #{press}, #{year}, #{pages})
+    </insert>
+
+    <update id="modifyBook" parameterType="cn.liantao.lbook.entity.Book">
+        UPDATE books
+        SET name=#{name},
+            author=#{author},
+            isbn=#{newisbn},
+            outline=#{outline},
+            stock=#{stock},
+            price=#{price},
+        <if test="cover != null">
+            cover=#{cover},
+        </if>
+        <if test="cover == null">
+            cover= null,
+        </if>
+            press=#{press},
+            year=#{year},
+            pages=#{pages}
+        WHERE isbn=#{ISBN}
+    </update>
+
+    <select id="getDetail" resultType="cn.liantao.lbook.entity.Book">
+        SELECT *
+            FROM books
+                WHERE isbn =#{ISBN}
+    </select>
+</mapper>

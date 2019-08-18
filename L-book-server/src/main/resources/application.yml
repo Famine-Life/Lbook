@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: dev
+
+#Spring Actuator配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+  endpoint:
+    health.show-details: always
