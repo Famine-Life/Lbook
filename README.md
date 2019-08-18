@@ -1,9 +1,11 @@
-﻿﻿
- LBook:一个简单在线图书购买平台Demo，采用Spring Boot+SpringMVC+Vue开发
+﻿﻿  
+LBook:一个简单在线图书购买平台Demo，采用Spring Boot+SpringMVC+Vue开发
 
-
+  
 ## 技术栈
+
 ### 后端技术栈
+
 1.Maven
 
 2.SpringBoot
@@ -22,7 +24,9 @@
 
 9.Fastjson
 
+
 ### 前端技术栈
+
 1.Vue
 
 2.ElementUI
@@ -40,6 +44,7 @@
 8.vue-cli
 
 ## 功能
+
 - 用户功能
 
 - 首页
@@ -59,6 +64,7 @@
 - 个人购买统计
 
 ## 管理员功能(待完善)
+
 - 书籍信息管理
 
 - 用户权限管理
@@ -69,19 +75,23 @@
 
 - 统计数据管理
 
+## 文档
 
-## 文档 
-- [功能需求文档](docs/功能需求文档)
+- [功能需求文档](./docs/功能需求文档)
+
 
 ## 快速开始
+
 #### L-book-client
+
 1.克隆L-book-client到本地
 
 2.安装依赖npm install
 
-3.启动项目npm run serve
+3.启动项目npm run serve 
 
 #### L-book-server
+
 1.clone L-book-server到idea
 
 2.修改数据库配置
@@ -89,6 +99,7 @@
 3.运行
 
 ## 当前状态
+
 1.关系数据库(Mysql)+Nosql数据库(MongoDB) 双数据库源管理数据
 
 2.利用短信验证功能实现注册与登录
@@ -97,12 +108,16 @@
 
 4.实现邮件发送，并依此开发找回密码功能
 
-
 ## 图片预览
 
 ### home
+
 ![home](readme_img/home.png)
+
 ### books
+
 ![books](readme_img/books.png)
+
 ### login
+
 ![login](readme_img/login.png)
