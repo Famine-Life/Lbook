@@ -1,5 +1,5 @@
-﻿﻿## LBook
-一个简单在线图书购买平台Demo，采用Spring Boot+SpringMVC+Vue开发
+﻿﻿
+ LBook:一个简单在线图书购买平台Demo，采用Spring Boot+SpringMVC+Vue开发
 
 
 ## 技术栈
