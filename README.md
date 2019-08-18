@@ -1,9 +1,6 @@
 ﻿# LBook
 一个简单在线图书购买平台Demo，采用Spring Boot+SpringMVC+Vue开发
 
-
-> 建议用chrome或Firefox食用，由于服务器带宽较低，初次加载会较慢
-
 <br/>
 
 # 技术栈
