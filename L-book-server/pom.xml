@@ -8,11 +8,11 @@
 		<version>2.1.3.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>cn.liuzhengwei</groupId>
-	<artifactId>e-book</artifactId>
+	<groupId>cn.liantao</groupId>
+	<artifactId>l-book</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>E-book</name>
-	<description>Back-end for E-book</description>
+	<name>L-book</name>
+	<description>L-book</description>
 
 	<properties>
 		<java.version>1.8</java.version>

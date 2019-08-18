@@ -23,7 +23,7 @@
     </select>
 
     <select id="getBooks" resultMap="BookResultMap">
-        SELECT name,author,isbn,outline,stock,price,cover
+        SELECT *
             FROM books
     </select>
 

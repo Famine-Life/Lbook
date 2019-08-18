@@ -1,1 +1,1 @@
-CREATE DATABASE ebook;
+CREATE DATABASE lbook;

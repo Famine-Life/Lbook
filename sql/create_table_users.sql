@@ -1,4 +1,4 @@
-USE ebook;
+USE lbook;
 CREATE TABLE `users` (
   `account` VARCHAR(50) NOT NULL,
   `password` VARCHAR(50) NULL,

@@ -68,7 +68,7 @@
             </div>
         </transition>
         <transition name="shopcart">
-                <div  class="bg-danger float wrap" style="cursor: pointer"  @click="showShopCart = !showShopCart"
+                <div  class="bg-success float wrap" style="cursor: pointer"  @click="showShopCart = !showShopCart"
                       v-show="showShopCart">
                     <el-badge :value="total.total_books" class="center" :hidden="total.total_books === 0">
                         <i class="iconfont icon-gouwuche"></i>
@@ -76,7 +76,7 @@
                 </div>
         </transition>
         <transition name="float">
-            <div  class="shopcart-float bg-danger wrap" style="cursor: pointer" @click="showShopCart = !showShopCart"
+            <div  class="shopcart-float bg-success wrap" style="cursor: pointer" @click="showShopCart = !showShopCart"
                   v-show="!showShopCart">
                 <el-badge :value="total.total_books" class="center" :hidden="total.total_books === 0">
                     <i class="iconfont icon-gouwuche"></i>

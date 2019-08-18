@@ -4,7 +4,7 @@
             <a class="navbar-brand" href="#">
                 <div class="row" :class="{ 'text-white':isManager}">
                    <i class="iconfont icon-shuji mt-1 mr-2 ml-2"></i>
-                    E-book在线书店
+                    L-book在线书店
                 </div>
             </a>
             <ul class="nav nav-fill nav-pills" v-show="$route.meta.showNavDetail">

@@ -1,4 +1,4 @@
-USE ebook;
+USE lbook;
 CREATE TABLE `books` (
   `name` VARCHAR(50) NULL,
   `author` VARCHAR(50) NULL,
