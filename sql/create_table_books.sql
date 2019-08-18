@@ -1,4 +1,5 @@
-CREATE TABLE `ebookk`.`books` (
+USE ebook;
+CREATE TABLE `books` (
   `name` VARCHAR(50) NULL,
   `author` VARCHAR(50) NULL,
   `ISBN` VARCHAR(50) NOT NULL,
