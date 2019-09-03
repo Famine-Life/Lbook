@@ -12,7 +12,7 @@ import com.aliyuncs.profile.DefaultProfile;
 
 public class Message {
     public static String sendSMS(String phoneNumber) throws ServerException,ClientException {
-        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "LTAIFlno5O3QlcCr", "Ztdo20QH4r0b7VfJXIVwMCChY3iqYq");
+        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "LTAI4FgaN63SWd6spjCp81WK", "kiD9siQpy3wt3v1QrKVKsg4WZQa4yQ");
         IAcsClient client = new DefaultAcsClient(profile);
 
         String code = RandomNumber.generate(6);
@@ -24,8 +24,8 @@ public class Message {
         request.setAction("SendSms");
         request.putQueryParameter("RegionId", "cn-hangzhou");
         request.putQueryParameter("PhoneNumbers", phoneNumber);
-        request.putQueryParameter("SignName", "EBook");
-        request.putQueryParameter("TemplateCode", "SMS_163852487");
+        request.putQueryParameter("SignName", "LBook");
+        request.putQueryParameter("TemplateCode", "SMS_173343759");
         request.putQueryParameter("TemplateParam", "{\"code\":\""+code+"\"}");
 
         CommonResponse response = client.getCommonResponse(request);

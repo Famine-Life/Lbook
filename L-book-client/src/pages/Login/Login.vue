@@ -31,6 +31,7 @@
             <el-form-item label="手机号" prop="account">
                 <el-row>
                     <el-col :span="16"><el-input placeholder="请输入手机号" v-model="SignUp.account"></el-input></el-col>
+                    <!-- <el-col :span="8" v-show="!countDown"><el-button type="success" plain  @click="getCode(SignUp.account)">获取验证码</el-button></el-col> -->
                     <el-col :span="8" v-show="!countDown"><el-button type="success" plain :disabled="!phoneCheck" @click="getCode(SignUp.account)">获取验证码</el-button></el-col>
                     <el-col :span="8" v-show="countDown"><el-button type="success" plain disabled>{{count}}s后重发</el-button></el-col>
                 </el-row>

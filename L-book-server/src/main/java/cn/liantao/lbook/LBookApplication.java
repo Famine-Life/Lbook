@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @MapperScan("cn.liantao.lbook.mapper")
 @SpringBootApplication
-public class EBookApplication {
+public class LBookApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EBookApplication.class, args);
+		SpringApplication.run(LBookApplication.class, args);
 	}
 
 }

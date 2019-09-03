@@ -8,6 +8,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 @Ignore
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class EBookApplicationTests {
+public class LBookApplicationTests {
 
 }
