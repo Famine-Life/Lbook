@@ -12,7 +12,7 @@ import com.aliyuncs.profile.DefaultProfile;
 
 public class Message {
     public static String sendSMS(String phoneNumber) throws ServerException,ClientException {
-        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "LTAI4FgaN63SWd6spjCp81WK", "kiD9siQpy3wt3v1QrKVKsg4WZQa4yQ");
+        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "LTAI4FgaN63SWd6spjCp81WK", "xxxxx"); //阿里云短信验证需要上线应用的审核，学习使用建议用邮箱
         IAcsClient client = new DefaultAcsClient(profile);
 
         String code = RandomNumber.generate(6);
